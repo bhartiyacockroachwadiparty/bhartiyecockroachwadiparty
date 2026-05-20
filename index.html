@@ -756,4 +756,62 @@ Instagram
 <img src="Gemini_Generated_Image_w5tm4nw5tm4nw5tm.png" 
      alt="My Photo" 
      width="100%" 
-     style="display: block; margin: 20px auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+     style="display: block; margin: 20px auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"> 
+
+from PIL import Image, ImageDraw, ImageFont
+import textwrap
+
+# Image path (apni photo ka path daal do)
+image_path = "your_photo.jpg"  # ← yahan apni photo ka naam daalo
+
+# Load image
+img = Image.open(image_path)
+width, height = img.size
+
+# Dark overlay banao
+overlay = Image.new('RGBA', (width, height), (0, 0, 0, 180))  # darkness control
+img = img.convert('RGBA')
+img = Image.alpha_composite(img, overlay)
+
+draw = ImageDraw.Draw(img)
+
+# Font (agar system mein nahi hai to Google se "Playfair Display" ya "Montserrat" download karke fonts folder mein rakh lo)
+try:
+    title_font = ImageFont.truetype("arial.ttf", 80)      # bada text
+    name_font = ImageFont.truetype("arialbd.ttf", 120)    # naam ke liye
+    sub_font = ImageFont.truetype("arial.ttf", 50)        # small text
+except:
+    title_font = ImageFont.load_default()
+    name_font = ImageFont.load_default()
+    sub_font = ImageFont.load_default()
+
+# Colors
+gold = (255, 215, 0)
+white = (255, 255, 255)
+
+# Text positions (adjust kar sakte ho)
+center_x = width // 2
+
+# BCP
+draw.text((50, 80), "BCP", fill=gold, font=title_font, anchor="lt")
+
+# FOUNDER SPOTLIGHT
+draw.text((center_x, 280), "FOUNDER", fill=white, font=title_font, anchor="mm")
+draw.text((center_x, 370), "SPOTLIGHT", fill=gold, font=title_font, anchor="mm")
+
+# Name
+draw.text((center_x, 550), "MURTAZA", fill=gold, font=name_font, anchor="mm")
+draw.text((center_x, 670), "ALI", fill=gold, font=name_font, anchor="mm")
+
+# M.A in Political Science
+draw.text((center_x, 780), "M.A in Political Science", fill=white, font=sub_font, anchor="mm")
+
+# Founder & Supreme Lazy Leader
+draw.text((center_x, 860), "Founder & Supreme Lazy Leader", fill=white, font=sub_font, anchor="mm")
+
+# Username
+draw.text((center_x, 950), "@Shershaah02", fill=gold, font=sub_font, anchor="mm")
+
+# Save
+img.save("final_spotlight.jpg", quality=95)
+print("Image saved as final_spotlight.jpg")
