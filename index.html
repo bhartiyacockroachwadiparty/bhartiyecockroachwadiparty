@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                        <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,10 @@
     <title>Bharatiya Cockroachwadi Party (BCP)</title>
     <style>
         :root {
-            --bg-color: #0b0f19; /* Dark background from screenshot */
-            --card-bg: #151c2c; /* Slightly lighter card background */
+            --bg-color: #0b0f19; 
+            --card-bg: #151c2c; 
             --text-color: #f3f4f6;
-            --accent-color: #fbc02d; /* Yellow accent color for BCP logo */
+            --accent-color: #fbc02d; 
             --border-color: #1e293b;
         }
         
@@ -22,7 +22,6 @@
             padding: 0;
         }
 
-        /* Navigation Bar from Screenshot */
         nav {
             background-color: #0b0f19;
             padding: 15px 20px;
@@ -54,10 +53,6 @@
             font-weight: 500;
         }
 
-        nav .nav-links a:hover {
-            color: white;
-        }
-
         .container {
             max-width: 680px;
             margin: 0 auto;
@@ -74,7 +69,6 @@
             font-size: 2.2rem;
             margin: 0 0 10px 0;
             letter-spacing: -0.5px;
-            color: var(--text-color);
         }
 
         .tagline {
@@ -101,7 +95,7 @@
             color: var(--accent-color);
         }
 
-        /* Team/Leaders Section from Screenshot */
+        /* Clean No-Photo Single Leadership Card */
         .team-grid {
             display: flex;
             flex-direction: column;
@@ -111,55 +105,44 @@
 
         .team-card {
             background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--accent-color); /* Premium border for Supreme leader */
             border-radius: 16px;
-            padding: 30px 20px;
+            padding: 35px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .avatar-placeholder {
-            width: 90px;
-            height: 90px;
-            background: linear-gradient(135deg, #1e293b, #334155);
-            border-radius: 50%;
-            margin: 0 auto 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            border: 2px solid var(--border-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
 
         .team-card h3 {
-            font-size: 1.4rem;
-            margin: 0 0 5px 0;
+            font-size: 1.8rem;
+            margin: 0 0 8px 0;
             color: white;
+            letter-spacing: 0.5px;
         }
 
         .team-card p {
             color: #94a3b8;
-            margin: 0 0 12px 0;
-            font-size: 1rem;
+            margin: 0 0 15px 0;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         .insta-link {
             display: inline-block;
             color: var(--accent-color);
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: bold;
             background-color: rgba(251, 192, 45, 0.1);
-            padding: 4px 12px;
+            padding: 6px 16px;
             border-radius: 20px;
+            transition: all 0.2s;
         }
 
         .insta-link:hover {
             background-color: var(--accent-color);
-            color: #000;
+            color: #0b0f19;
         }
 
-        /* Info Grid */
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -211,7 +194,6 @@
             display: block;
             margin-bottom: 12px;
             cursor: pointer;
-            font-size: 1rem;
         }
 
         input[type="checkbox"] {
@@ -233,11 +215,6 @@
             cursor: pointer;
             margin-top: 20px;
             text-decoration: none;
-            transition: background 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #fdd835;
         }
 
         footer {
@@ -256,10 +233,6 @@
             h1 {
                 font-size: 1.8rem;
             }
-            nav .nav-links {
-                gap: 8px;
-                font-size: 0.85rem;
-            }
         }
     </style>
 </head>
@@ -268,7 +241,7 @@
     <nav>
         <a href="#" class="logo">BCP</a>
         <div class="nav-links">
-            <a href="#about">About</a>
+            <a href="#about">Leader</a>
             <a href="#manifesto">Manifesto</a>
             <a href="#vision">Vision</a>
             <a href="#membership">Membership</a>
@@ -282,108 +255,5 @@
         </header>
 
         <div class="intro-box">
-            "For the people the system forgot to count. Five demands. Zero sponsors. One large, stubborn swarm."
-        </div>
-
-        <section id="about">
-            <h2>Party Leadership</h2>
-            <div class="team-grid">
-                
-                <div class="team-card">
-                    <div class="avatar-placeholder">🪳</div>
-                    <h3>Murtaza Ali</h3>
-                    <p>Supreme Cockroach / Chief Meme Strategist</p>
-                    <a href="https://instagram.com/Shershaah02" target="_blank" class="insta-link">🔗 @Shershaah02</a>
-                </div>
-
-                <div class="team-card">
-                    <div class="avatar-placeholder">🌐</div>
-                    <h3>Digital Baba</h3>
-                    <p>Wi-Fi & Revolution Minister</p>
-                </div>
-
-                <div class="team-card">
-                    <div class="avatar-placeholder">📝</div>
-                    <h3>RTI Warrior</h3>
-                    <p>Professional Question Asker</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="vision">
-            <h2>Core Vision (हमारी सोच)</h2>
-            <p>Hum yahan ek aur PM CARES banane, taxpayer ke paise par Davos me holiday manane, ya bhrashtachar ko 'strategic spending' ka naam dene nahi aaye hain. Hum yahan sirf ye poochne aaye hain — zor se, baar-baar, aur likhit me — ki aakhir paisa gaya kahan?</p>
-        </section>
-
-        <section>
-            <h2>Party Overview</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <strong>📍 Headquarter</strong>
-                    Jahaan bhi Wi-Fi kaam kare!
-                </div>
-                <div class="info-card">
-                    <strong>✊ Ideology</strong>
-                    Secular, Socialist, Democratic, and Lazy.
-                </div>
-            </div>
-        </section>
-
-        <section id="manifesto">
-            <h2>Manifesto (हमारी मुख्य माँगें)</h2>
-            <ol>
-                <li>
-                    <strong>Judicial Reform</strong>
-                    Kisi bhi Chief Justice ko retirement ke baad Rajya Sabha ki seat ya koi bhi government position/reward nahi diya jayega.
-                </li>
-                <li>
-                    <strong>Electoral Accountability</strong>
-                    Agar kisi valid citizen ka naam voter list se bina wajah kaata jata hai, toh Chief Election Commissioner (CEC) par UAPA (Terrorism Law) ke tehat case darj hona chahiye.
-                </li>
-                <li>
-                    <strong>Women Empowerment</strong>
-                    Parliament aur Cabinet ki saari seats par mahilaon ko poora 50% arakshan (reservation) milna chahiye.
-                </li>
-                <li>
-                    <strong>Media Crackdown</strong>
-                    Jo bade media houses bade corporates ke hain, unke licenses ko radd kiya jaye aur mainstream news anchors ke bank accounts ki jaanch ho.
-                </li>
-                <li>
-                    <strong>Anti-Defection Rule</strong>
-                    Jo bhi MLA ya MP chunav jeetne ke baad apni party badalta hai, us par 20 saal tak koi bhi chunav ladne ya sarkari pad lene par poora ban ho.
-                </li>
-                <li>
-                    <strong>Education System</strong>
-                    NEET exam me chal rahi dhandhli ke khilaf students ko insaf mile aur CBSE paper re-checking fees turant khatam ho.
-                </li>
-            </ol>
-        </section>
-
-        <section class="form-section" id="membership">
-            <h2>Membership Form (सदस्यता फॉर्म)</h2>
-            <p>Bhartiya Cockroachwadi Party se judne ke liye eligibility check karein:</p>
-            
-            <form onsubmit="alert('Welcome, Murtaza Ali ke swarm me aapka swagat hai! Membership noted.'); return false;">
-                <div class="checkbox-group">
-                    <label>
-                        <input type="checkbox" required> Kya aap sach me aalsi hain?
-                    </label>
-                    <label>
-                        <input type="checkbox" required> Kya aap chronically online (din-raat internet par) rehte hain?
-                    </label>
-                    <label>
-                        <input type="checkbox" required> Kya aap khud ko ek 'cockroach' maante hain?
-                    </label>
-                </div>
-                <button type="submit" class="btn">Join the Swarm</button>
-            </form>
-        </section>
-
-        <footer>
-            <p>© 2026 Bharatiya Cockroachwadi Party. Digital & Decentralized.</p>
-        </footer>
-    </div>
-
-</body>
-    </html>
+            "For the Person who is Supreme Cockroach
+Chief Meme Strategist Murtaza Ali and Insta of him @Shershaah02 
